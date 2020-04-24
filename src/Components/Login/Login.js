@@ -27,7 +27,6 @@ export class Login extends Component {
         return (
             <div className="container">
                 <Logo />
-                <br/> 
                 <StyledFirebaseAuth uiConfig={this.uiConfig} firebaseAuth={firebase.auth()} />
             </div>
         )
