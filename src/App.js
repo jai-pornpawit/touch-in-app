@@ -1,15 +1,14 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { ConnectedRouter } from 'connected-react-router/immutable'
+import React from 'react';
+import './App.css';
+import Login from './Components/Login/Login'
 
-import routes from './pages'
 
-const App = ({ history }) => {
-  return <ConnectedRouter history={history}>{routes}</ConnectedRouter>
+function App() {
+  return (
+    <div className="App">
+      <Login />
+    </div>
+  );
 }
 
-App.propTypes = {
-  history: PropTypes.object,
-}
-
-export default App
+export default App;
